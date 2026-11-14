@@ -1,1 +1,67 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mission Control | Space Archaeology</title><link rel="stylesheet" href="style.css"></head><body><header><div class="wrap nav"><a class="brand" href="index.html">✦ SPACE ARCHAEOLOGY</a><nav class="navlinks"><a class="active" href="index.html">Home</a><a class="" href="mission.html">Mission</a><a class="" href="timeline.html">Timeline</a><a class="" href="investigation.html">Investigate</a><a class="" href="map.html">Mars Map</a><a class="" href="archives.html">Archives</a><a class="" href="verdict.html">Verdict</a></nav><span class="xp" id="xp">0 XP</span></div></header><main class="wrap"><section class="hero"><div><div class="eyebrow">INTERACTIVE SPACE INVESTIGATION</div><h1>SPACE<br><span>ARCHAEOLOGY</span></h1><p class="lead">Humanity sent machines into the unknown. Some completed their missions, some fell silent, and some remain far from home. Explore their stories, examine the evidence and uncover what happened.</p><a class="btn primary" href="mission.html">Start investigation →</a> <a class="btn" href="archives.html">Explore archives</a></div><div class="planet"><div class="mars"></div></div></section><section class="section"><div class="kicker">MISSION CONTROL</div><h2>Investigator dashboard</h2><p>Progress saves in this browser.</p><div class="statrow"><div class="stat"><strong id="xp">0</strong><small>XP earned</small></div><div class="stat"><strong id="count">0 / 3</strong><small>Evidence files</small></div><div class="stat"><strong>001</strong><small>Active case</small></div></div><p>Evidence progress</p><div class="bar"><i id="bar"></i></div></section><section class="section grid"><article class="card"><div class="kicker">01 / BRIEFING</div><h3>Mission briefing</h3><p>Meet NASA's Opportunity rover and learn why its mission became historic.</p><a class="btn" href="mission.html">Open</a></article><article class="card"><div class="kicker">02 / CHRONOLOGY</div><h3>Mission timeline</h3><p>Explore the major events of the rover's journey.</p><a class="btn" href="timeline.html">Explore</a></article><article class="card"><div class="kicker">03 / FIELDWORK</div><h3>Investigation room</h3><p>Collect evidence, solve puzzles and reach a conclusion.</p><a class="btn" href="investigation.html">Investigate</a></article></section></main><footer><div class="wrap">Independent educational prototype. Not an official NASA product or endorsement. Mission facts summarized from NASA's Opportunity archive.</div></footer><script src="main.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcards from the Moon</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #142541;
+            overflow: hidden;
+        }
+
+        /* Main background image */
+        .landing-page {
+            position: absolute;
+            width: min(100vw, 177.87vh);
+            aspect-ratio: 1270 / 714;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-image: url("landing.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        /* Invisible clickable area over Start */
+        .start-hotspot {
+            position: absolute;
+
+            left: 49%;
+            top: 54%;
+            width: 21.5%;
+            height: 15.5%;
+
+            display: block;
+            cursor: pointer;
+        }
+
+        .start-hotspot:focus-visible {
+            outline: 3px solid white;
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="landing-page">
+
+        <a href="second.html"
+           class="start-hotspot"
+           aria-label="Start exploring">
+        </a>
+
+    </div>
+
+</body>
+</html>
